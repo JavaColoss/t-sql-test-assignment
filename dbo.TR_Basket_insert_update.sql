@@ -11,12 +11,12 @@ BEGIN
     FROM dbo.Basket b
     INNER JOIN inserted i ON b.ID = i.ID
     WHERE b.ID_SKU = @ID_SKU
-  END
+  END;
   ELSE
   BEGIN
     UPDATE b SET b.DiscountValue = 0
     FROM dbo.Basket b
     INNER JOIN inserted i ON b.ID = i.ID
     WHERE b.ID_SKU = @ID_SKU
-  END
-END
+  END;
+END;
