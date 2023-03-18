@@ -17,7 +17,7 @@
   - На выходе значение типа decimal(18, 2)
 4. Создать представление (на выходе: файл в репозитории dbo.vw_SKUPrice в ветке VIEWs)
   - Возвращает все атрибуты продуктов из таблицы dbo.SKU и расчетный атрибут со стоимостью одного продукта (используя функцию dbo.udf_GetSKUPrice)
-5 Создать процедуру (на выходе: файл в репозитории dbo.usp_MakeFamilyPurchase в ветке Procedures)
+5. Создать процедуру (на выходе: файл в репозитории dbo.usp_MakeFamilyPurchase в ветке Procedures)
   - Входной параметр (@FamilySurName varchar(255)) одно из значений аттрибута SurName таблицы dbo.Family
   - Процедура при вызове обновляет данные в таблицы dbo.Family в поле BudgetValue по логике
       1. dbo.Family.BudgetValue - sum(dbo.Basket.Value)
